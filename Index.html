@@ -1,0 +1,152 @@
+<!DOCTYPE html <html lang="en" dir="ltr">
+
+<head>
+
+  <link rel="stylesheet" href="StyleSheet.css" />
+
+  <meta charset="utf-8">
+  <title>Western Cape Covid Hub</title>
+
+</head>
+
+<body>
+  <div id="location"></div>
+  <script>
+    var div  = document.getElementById("location");
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
+      } else {
+        div.innerHTML = "The Browser Does not Support Geolocation";
+      }
+    }
+
+    function showPosition(position) {
+      div.innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
+    }
+
+    function showError(error) {
+      if(error.PERMISSION_DENIED){
+          div.innerHTML = "The User have denied the request for Geolocation.";
+      }
+    }
+    getLocation();
+  </script>
+  
+</div>
+
+    <div class="header">
+      <header>
+
+        <img src="Covi Images.html\Health Banner.jpg" alt="Western Cape Health" align="right" height=" 100" width="250" />
+
+
+        <div class="topnav">
+
+          <a href="Index.html" class= "active" >Home</a>
+          <a href="Covid-19 Recent Data.html">Covid Data</a>
+          <a href="Covid-19 Symptoms.html">Symptoms</a>
+          <a href="Covid-19 Testing.html"> Testing</a>
+          <a href="Covid-19 Vaccination.html"> Vaccination</a>
+          <a href="Covid -19 Relief.html">Covid Relief</a>
+          <a href="Contact Details.html"> Contact Details </a>
+</div>
+</header>
+    </div>
+    
+
+    <h1> WESTERN CAPE GOVERNMENT COVID HUB </h1>
+
+    <div class="row">
+      <div class= "column1">
+
+      <div class="container">
+
+        <img src="Covi Images.html\Covid virus.jpg" alt="Covid virus" >
+</div>
+</div>
+
+<div class = "column1">
+<br>
+<br>
+<br>
+
+   
+<h3> Help us to help you.</h3> 
+<br>
+
+<p>Knowing a little bit about you helps us to know what kind of help to send your way. Please take a few minutes to complete the form below.</p>
+<br>
+
+<form action= "form.php" method= "post"> 
+
+
+        <label for="firstname"> Name </label>
+        <input type="text" id="firstname" name="firstname">
+        <br>
+        <label for="lastname"> Surname</> </label>
+        <input type="text" id="lastname" name="lastname">
+        <br>
+        <label for="race"> Race</> </label>
+        <input type="text" id="race" name="race"></label>
+        <br>
+        <label for="gender"> Gender</> </label>
+        <input type="text" id="gender" name="gender">
+        <br>
+        <label for="surburb"> Surbub</> </label>
+        <input type="text" id="surbub" name="surburb">
+        <br>
+        <label for="occupation"> Occupation</> </label>
+        <input type="text" id="occupation" name="occupation">
+         <br>
+         <label for="age"> Age</> </label>
+        <input type="text" id="age" name="age">
+          <br>
+        <button type="Submit">Submit</button>
+
+</form>
+    </div>
+</div>
+
+
+    <div class="row">
+    <div class="column1">
+        <h2>Covid is a pandemic!</h2>
+
+        <p>Covid-19 is an acute respiratory syndrome that originated in Wuhan China in 2019. It was first detected in South Africa on 5 March 2020, when a 38 year old man who had just returned from a visit to Italy tested positive.Since then it has turned
+          into a pandemic that has ravaged the world for 2 years now and is still not over. We still need to educate ourselves and exercise caution to avoid contracting and transmitting Covid-19. The Western Cape Government is committed to working with its
+          people to create a safe environment for us all.
+          <br>
+          Remember, the danger is not yet over. We all still need to be cautious and observe all covid protocols
+        </p>
+      </div>
+
+      <div class="column1"> 
+       <div class= "container1"> 
+      <img src="Covi Images.html\Covid image 2.jpg" alt="Covid"> </div>
+    </div>
+    
+    </div>
+</div>
+
+
+        <h2>Latest covid protocols</h2>
+
+        <p>The president just announced a new set of Covid protocols. A number of things have fallen away but this does not mean we should stop being cautious and responsible. Here is a list of Covid protocols that are still very important to observe.</p>
+
+        <ol>
+          <li>Wear a mask indoors</li>
+          <li>Isolate for 10 days from day of exposure if you have been in contact with an infected person</li>
+          <li> Sanitise regularly </li>
+          <li>Maintain social distance in enclosed </li>
+        </ol>
+
+    
+
+    <div class="footer">
+<footer>  
+<p> <strong>Toll free 24 hour service number 0860 142 142</strong> </p>
+</footer>
+</div>
+</body>
+</html>
